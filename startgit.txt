@@ -1,0 +1,72 @@
+git --version 查看版本号
+git config --global user.name "majin"
+git config --global user.email "13051152997@163.com"
+git config --global --list 查看配置信息  
+
+git clone ～～～～～～（拉取代码）
+git init 初始化
+git add . 添加全部  （添加大本地暂存区）
+git add app.wxss (添加单个文件)
+
+git rm app1.wxss(删除文件)
+git diff (查看不同 ，文件较少的情况下)
+git checkout -- app.wxss （还原到最后一次提交的状态）
+git reset HEAD app.wxss. (撤销add 后的文件)
+git reset --hard HEAD^ (会退上一版本 ^几个就是几个版本)
+git reset --hard 90a3e5f7057c110d71372f4d89b961708c0b3833
+
+
+git tag v1.0 (打标签)
+git tag v1.0 cb30cda （给单独版本打标签）
+git tag -d v0.5 (删除标签)
+git push origin v1.0 (远程推送标签)
+git tag （查看标签） 
+ 
+git commit -m 第一次上传  （暂存区提交到远程）
+
+git push 上传文件
+
+------------------------------------------
+创建 切换 删除分支
+git branch （查看分支）
+git branch dev （创建dev分支）
+git checkout dev （切换到dev分支）
+git branch -d test（删除test分支 不能删除当前所在的分支）
+git checkout -b test （创建test分支 并且跳转到test）
+git branch -D test （强制删除test分支）
+------------------------------------------
+合并分支
+git merge dev (合并dev分支到 当前分支)
+手动解决合并分支冲突 在add commit
+------------------------------------------
+git log --oneline --graph （查看版本路线）
+
+------------------------------------------
+git fetch （拉取所有的远程仓库）
+git branch -av （查看）
+git push origin --delete summer （删除远程仓库的summer分支）
+------------------------------------------
+不同人修改了不同文件
+git branch -av （先查看）
+git merge origin/main （合并远程代码到本地）
+
+
+git status 查看git改变的状态
+
+
+===================================
+提交代码前先merge代码
+ git add .
+ git commit -m 保存的文字
+ git merge origin/main
+然后手动解决冲突在提交
+ 
+===================================
+
+
+git mv app.wxss app1.wxss （重命名文件）
+git log 查看日志 Q 退出界面
+git log --author=majin 查看单个人的日志
+
+
+  
