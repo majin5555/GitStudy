@@ -1,7 +1,7 @@
 git --version 查看版本号
 git config --global user.name "majin"
 git config --global user.email "13051152997@163.com"
-git config --global --list 查看配置信息  
+git config --global --list 查看配置信息
 
 git clone ～～～～～～（拉取代码）
 git init 初始化
@@ -20,8 +20,8 @@ git tag v1.0 (打标签)
 git tag v1.0 cb30cda （给单独版本打标签）
 git tag -d v0.5 (删除标签)
 git push origin v1.0 (远程推送标签)
-git tag （查看标签） 
- 
+git tag （查看标签）
+
 git commit -m 第一次上传  （暂存区提交到远程）
 
 git push 上传文件
@@ -60,7 +60,7 @@ git status 查看git改变的状态
  git commit -m 保存的文字
  git merge origin/main
 然后手动解决冲突在提交
- 
+
 ===================================
 
 
@@ -69,4 +69,9 @@ git log 查看日志 Q 退出界面
 git log --author=majin 查看单个人的日志
 
 
-  
+
+git log   查看日志
+git rebase -i HEAD~3   （HEAD 用日志id）
+git push -f origin HEAD:dev1   强推远程  （dev1 分支名称）
+
+
